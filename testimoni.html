@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+  <!-- Demo styles -->
+  <style>
+  	
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 15px 15px rgba(0,0,0,0,2);
+      filter: blur(4px);
+    }
+
+    .swiper-slide-active{
+    	filter: blur(0);
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img src="kuby.png"alt="" style="width: 85px; margin-left: 50px;"></a>
+      <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="about.html.html" style="color:black;">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="reviewdepan.html"style="color:black;">Review</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#event"style="color:black;">Event</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact"style="color:black;">Contact</a>
+  </li>
+</ul>
+    </div>
+  </nav>
+
+  <!-- CORUSEL -->
+  <div class="slides">
+      <div class="slide">
+        <img src="img/1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/as.jpg" alt="">
+      </div>
+      
+      <div class="slide">
+        <img src="img/wy.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/bc.jpg" alt="">
+      </div>
+      
+      <div class="navigation">
+        <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+        <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+      </div>
+    </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+		<img src="img/fest1.jpeg">
+      </div>
+      <div class="swiper-slide">
+       <img src="img/fest3.jpeg">
+      </div>
+      <div class="swiper-slide">
+       <img src="img/fest4.jpeg">
+      </div>      
+      <div class="swiper-slide">
+       <img src="img/fest5.jpeg">
+      </div>
+      <div class="swiper-slide">
+       <img src="img/fest6.jpeg">
+      </div>
+
+       <div class="wrap">
+      <img src="info.png" style="width: 180px; margin-left: 500 px;">
+    <div class="badan">
+          
+    <div class="sidebar">
+      
+    </div>
+
+    <div class="content">
+        
+    </div>
+    </div>
+  </div>
+  
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+  <script>
+  	function scrollToTop(){
+  		widow.scrollTo(0, 0);
+  	}
+  </script>
+</body>
+
+</html>

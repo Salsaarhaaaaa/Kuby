@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Community Beauty</title>
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">               	                      <!-- https://getbootstrap.com/ -->
+  	<link rel="stylesheet" href="css/fontawesome-all.min.css">  
+  	<link rel="stylesheet" href="css/style.css">                                   <!-- Font awesome -->
+</head>
+<body>
+	
+	<!-- NAVBAR -->
+	<nav class="navbar bg-body-tertiary">
+	  <div class="container-fluid">
+	    <a href="index.html" class="navbar-brand">
+        <img src="img/kuby.png"alt="" style="width: 85px; margin-left: 50px;"></a>
+	    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="about.html.html" style="color:black;">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="reviewdepan.html"style="color:black;">Event</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#artikel"style="color:black;">Artikel</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact"style="color:black;">Contact</a>
+  </li>
+</ul>
+	  </div>
+	</nav>
+
+	<!-- CORUSEL -->
+	<div class="slides">
+      <div class="slide">
+        <img src="img/wlcc.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/as.jpg" alt="">
+      </div>
+      
+      <div class="slide">
+        <img src="img/wy.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/bc.jpg" alt="">
+      </div>
+      
+      <div class="navigation">
+        <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+        <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+      </div>
+    </div>
+
+    	
+    </div>
+    <!--ARTIKEL-->
+    <div class="wrap" id="artikel">
+    	<img src="img/info.png" style="width: 180px; margin-left: 500 px;">
+    <div class="badan">
+    			
+		<div class="sidebar">
+			<h1 style="color: red;">KUBY Community itu apa, sih?</h1>
+
+        <p style="color: black; margin-right: 50px; text-align: justify;">Komunitas KUBY adalah komunitas kecantikan yang menginspirasi dan memberdayakan individu untuk mengeksplorasi dunia kecantikan dengan lebih percaya diri. Didirikan dengan semangat untuk merayakan keragaman dan kesempurnaan dalam segala bentuknya, Kuby mendorong para anggotanya untuk mengeksplorasi berbagai gaya, produk, dan tips kecantikan yang sesuai dengan kebutuhan dan preferensi mereka.  </P>
+      
+        <p style="color: black; margin-right: 50px; text-align: justify;">Komunitas ini tidak hanya menjadi tempat untuk berbagi pengetahuan tentang perawatan kulit, riasan, dan gaya rambut, tetapi juga menjadi wadah di mana para anggota saling mendukung, menginspirasi, dan membangun kepercayaan diri satu sama lain dalam perjalanan kecantikan mereka. Dengan nilai-nilai inklusivitas, kejujuran, dan dukungan, Kuby bertujuan untuk menciptakan lingkungan yang aman dan mendukung bagi semua orang yang ingin mengeksplorasi dan mengekspresikan keindahan mereka dengan cara yang autentik dan tanpa tekanan.</P>
+		</div>
+
+		<div class="content">
+				<div class="user">
+        <img src="img/eventemina.jpeg" style="height: 300px; width: 100%;">
+        <br><br>
+      </div>  
+		</div>
+		</div>
+	</div>
+
+  <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>Kuby adalah Komunitas kecantikan yang mendukung, menginspirasi, dan merayakan keragaman dalam eksplorasi keindahan tanpa batasan. Kuby bertujuan untuk menciptakan lingkungan yang aman dan mendukung bagi semua orang yang ingin mengeksplorasi dan mengekspresikan keindahan mereka dengan cara yang autentik dan tanpa tekanan.</p>
+            <div class="social">
+              <a href="https://web.whatsapp.com/"><img src="wa.jpg" style="width:20px;"></a>
+              <a href="https://www.instagram.com/ruby_community/?hl=en"><img src="img/ig.jpg" style="width: 20px;"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="text">Tanggerang Selatan, Indonesia</span>
+            </div>
+            <div class="phone">
+              <img src="wa.jpg" style="width:20px;">
+              <span class="text">+6282265732187</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="https://youtube.com/c/codingnepal">team kuby</a> | </span>
+          <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+</div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length)
+        {
+          slideIndex = 1;
+        }
+        if (n < 1)
+        {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++)
+        {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
